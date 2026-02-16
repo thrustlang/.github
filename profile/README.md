@@ -1,21 +1,21 @@
 <p align="center">
-  <img src= "https://github.com/thrushlang/.github/blob/main/assets/logos/thrushlang-logo-name.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrushlang-logo-name.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
-<h1 align="center">Thrush Programming Language</h1>
+<h1 align="center">Thrust Programming Language</h1>
 
-<p align="center">The <b>Thrush Programming Language</b>. A general-purpose, statically typed systems programming language for writing verbose, accurate, and fast code.</p>
+<p align="center">The <b>Thrust Programming Language</b>. A general-purpose, statically typed systems programming language for writing verbose, accurate, and fast code.</p>
 
 ## General Characteristics
 
 - Syntactically it is based on Rust.
 - Is C based.
 
-## Why Thrush?
+## Why Thrust?
 
 Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLIs) for powerful IR manipulation using GCC and LLVM intrinsics. Thrush offers more granular control over system languages by manipulating low-level instructions for extreme manual optimizations that compiler backends cannot decipher.
 
-- Thrush enables embedding of linear assembler within the compilation process, offering direct control over architecture-specific code generation.
+- Thrust enables embedding of linear assembler within the compilation process, offering direct control over architecture-specific code generation.
 
 ```rust
 
@@ -52,12 +52,12 @@ fn main() s32 @public {
 
 ## State
 
-- The Thrush compiler ``thrushc``: The Thrush compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Torio (the package manager) won’t be ready, so a temporary installer will be created until Torio development is complete or advanced enough for a beta. The documentation is on its way.
+- The Thrush compiler ``thrustc``: The Thrust compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Torio (the package manager) won’t be ready, so a temporary installer will be created until Torio development is complete or advanced enough for a beta. The documentation is on its way.
 
 ## Documentation
 
 The documentation is on its way.
-New, dedicated documentation is on its way for the web; however, you can view the outdated version at: https://github.com/thrushlang/syntax
+New, dedicated documentation is on its way for the web; however, you can view the outdated version at: https://github.com/thrustlang/syntax
 
 ## Examples
 
@@ -118,10 +118,10 @@ fn main() s32 @public {
 //
 // ******************************************************************************************
 
-// Thrush Programming Language - File extensions
+// Thrust Programming Language - File extensions
 // 
 // - '.🐦'
-// - '.thrush'
+// - '.thrust'
 //
 
 // External declaration for the C printf function
@@ -258,7 +258,7 @@ Commands:
 #### Thrush
 
 ```console
-thrushc -opt=O3 loop.thrush -start -o loop -end && ./loop 1
+thrushc -opt=O3 loop.thrust -start -o loop -end && ./loop 1
 ```
 
 #### C
@@ -275,7 +275,7 @@ clang -O3 loop.c -o loop && ./loop 1
 The **Thrush Programming Language** is involved with a research project or is part of a census at the University of Porto (**U.Porto**) and the Institute for Systems and Computer Engineering, Technology and Science (**INESC TEC**), related to a former PhD student.
 
 <p align="left">
-  <img src= "https://github.com/thrushlang/.github/blob/main/assets/thrushlang-research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/thrushlang-research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
 DISCLAIMER: *THIS DOES NOT MEAN THAT THRUSH PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
