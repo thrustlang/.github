@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrushlang-logo-name.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrustlang-logo-name.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
 <h1 align="center">Thrust Programming Language</h1>
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
