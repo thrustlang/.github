@@ -275,7 +275,7 @@ clang -O3 loop.c -o loop && ./loop 1
 The **Thrush Programming Language** is involved with a research project or is part of a census at the University of Porto (**U.Porto**) and the Institute for Systems and Computer Engineering, Technology and Science (**INESC TEC**), related to a former PhD student.
 
 <p align="left">
-  <img src= "https://github.com/thrustlang/.github/blob/main/assets/thrushlang-research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
 DISCLAIMER: *THIS DOES NOT MEAN THAT THRUSH PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
