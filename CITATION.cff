@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: .github
+message: >-
+  If you use this software in your work, please cite it
+  using the following metadata...
+type: software
+authors:
+  - given-names: Stevens Benavides
+    family-names: DevCheckOG
+    email: foss.stevens.benavides@gmail.com
+repository-code: 'https://github.com/thrustlang/.github'
+url: 'https://github.com/thrustlang'
+abstract: >-
+    Resource/assets center for the whole project. 
+keywords:
+  - Github Profile
+license: GPL-3.0
