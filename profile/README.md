@@ -66,13 +66,13 @@ New, dedicated documentation is on its way for the web; however, you can view th
 #### Linux
 
 ```console
-./thrushc -opt=O3 fibonacci.thrush -start -o fibonacci -end && ./fibonacci
+./thrustc -opt=O3 fibonacci.thrust -start -o fibonacci -end && ./fibonacci
 ```
 
 #### Windows
 
 ```console
-.\thrushc.exe -opt=O3 fibonacci.thrush -start -o fibonacci.exe -end && .\fibonacci.exe
+.\thrustc.exe -opt=O3 fibonacci.thrust -start -o fibonacci.exe -end && .\fibonacci.exe
 ```
 
 ### Package Manager
@@ -258,7 +258,7 @@ Commands:
 #### Thrush
 
 ```console
-thrushc -opt=O3 loop.thrust -start -o loop -end && ./loop 1
+thrustc -opt=O3 loop.thrust -start -o loop -end && ./loop 1
 ```
 
 #### C
@@ -293,11 +293,12 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 
 ## Social Networks
 
-[![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+[![Thrust Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
 
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
