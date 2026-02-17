@@ -13,7 +13,7 @@
 
 ## Why Thrust?
 
-Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLIs) for powerful IR manipulation using GCC and LLVM intrinsics. Thrush offers more granular control over system languages by manipulating low-level instructions for extreme manual optimizations that compiler backends cannot decipher.
+Thrust is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLIs) for powerful IR manipulation using GCC and LLVM intrinsics. Thrust offers more granular control over system languages by manipulating low-level instructions for extreme manual optimizations that compiler backends cannot decipher.
 
 - Thrust enables embedding of linear assembler within the compilation process, offering direct control over architecture-specific code generation.
 
@@ -52,7 +52,7 @@ fn main() s32 @public {
 
 ## State
 
-- The Thrush compiler ``thrustc``: The Thrust compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Torio (the package manager) won’t be ready, so a temporary installer will be created until Torio development is complete or advanced enough for a beta. The documentation is on its way.
+- The Thrust compiler ``thrustc``: The Thrust compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Torio (the package manager) won’t be ready, so a temporary installer will be created until Torio development is complete or advanced enough for a beta. The documentation is on its way.
 
 ## Documentation
 
@@ -92,10 +92,10 @@ torio run
 //
 // ******************************************************************************************
 
-// Thrush Programming Language - File extensions
+// Thrust Programming Language - File extensions
 // 
 // - '.🐦'
-// - '.thrush'
+// - '.Thrust'
 //
 
 // External declaration for the C printf function
@@ -247,7 +247,7 @@ int main(int argc, char** argv) {
 
 ### Benchmark
 
-- Thrush: AVG `1.76s`
+- Thrust: AVG `1.76s`
 - C: AVG `1.79s`
 
 > [!NOTE]  
@@ -255,7 +255,7 @@ int main(int argc, char** argv) {
 
 Commands:
 
-#### Thrush
+#### Thrust
 
 ```console
 thrustc -opt=O3 loop.thrust -start -o loop -end && ./loop 1
@@ -268,17 +268,17 @@ clang -O3 loop.c -o loop && ./loop 1
 ```
 
 > [!NOTE]  
->  Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent in the speed field.
+>  Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrust is trying to be a C equivalent in the speed field.
 
 ## Case Of Study
 
-The **Thrush Programming Language** is involved with a research project or is part of a census at the University of Porto (**U.Porto**) and the Institute for Systems and Computer Engineering, Technology and Science (**INESC TEC**), related to a former PhD student.
+The **Thrust Programming Language** is involved with a research project or is part of a census at the University of Porto (**U.Porto**) and the Institute for Systems and Computer Engineering, Technology and Science (**INESC TEC**), related to a former PhD student.
 
 <p align="left">
   <img src= "https://github.com/thrustlang/.github/blob/main/assets/research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
-DISCLAIMER: *THIS DOES NOT MEAN THAT THRUSH PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
+DISCLAIMER: *THIS DOES NOT MEAN THAT Thrust PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
 
 ## Background
 
