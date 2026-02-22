@@ -6,6 +6,9 @@
 
 <p align="center">The <b>Thrust Programming Language</b>. A general-purpose, statically typed systems programming language for writing verbose, accurate, and fast code.</p>
 
+> [!IMPORTANT]  
+> We're transitioning the name of the project from thrush to thrust, since the possible bad interpretation of "thrush" in the English slang as sometimes it is not refered as a the bird. This would be benefict in the future.
+
 ## General Characteristics
 
 - Syntactically it is based on Rust.
@@ -298,6 +301,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
