@@ -98,7 +98,7 @@ torio run
 // Thrust Programming Language - File extensions
 // 
 // - '.🐦'
-// - '.Thrust'
+// - '.thrust'
 //
 
 // External declaration for the C printf function
@@ -301,6 +301,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
