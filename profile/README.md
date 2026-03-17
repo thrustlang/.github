@@ -275,7 +275,7 @@ clang -O3 loop.c -o loop && ./loop 1
 
 ## Case Of Study
 
-The **Thrust Programming Language** is involved with a research project or is part of a census at the University of Porto (**U.Porto**) and the Institute for Systems and Computer Engineering, Technology and Science (**INESC TEC**), related to a former PhD student.
+The **Thrust Programming Language** is involved with a research project or is part of a census at the University of Porto (**U.Porto**) and the Institute for Systems and Computer Engineering, Technology and Science (**INESC TEC**), related to a PhD Research student.
 
 <p align="left">
   <img src= "https://github.com/thrustlang/.github/blob/main/assets/research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
