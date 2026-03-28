@@ -6,8 +6,7 @@
 
 <p align="center">The <b>Thrust Programming Language</b>. A general-purpose, statically typed systems programming language for writing verbose, accurate, and fast code.</p>
 
-> [!IMPORTANT]  
-> We're transitioning the name of the project from thrush to thrust, since the possible bad interpretation of "thrush" in the English slang as sometimes it is not refered as a the bird. This would be beneficial in the future.
+<img src= "https://github.com/thrustlang/.github/blob/main/assets/standard-text-separator.png" alt= "standard-separator" style= "width: 1hv;"> </img>
 
 ## General Characteristics
 
@@ -293,6 +292,8 @@ The responsible team (practically a *solo developer*) considers it a side, not m
 
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
 Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llvm.org/)** or **[GCC](https://gcc.gnu.org/)**? Don't worry! We're happy to teach you.
+
+<img src= "https://github.com/thrustlang/.github/blob/main/assets/standard-text-separator.png" alt= "standard-separator" style= "width: 1hv;"> </img>
 
 ## Social Networks
 
