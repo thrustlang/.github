@@ -10,9 +10,13 @@
 
 ## Why Thrust?
 
-Thrust is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLIs) for powerful IR manipulation using GCC and LLVM intrinsics. Thrust offers more granular control over system languages by manipulating low-level instructions for extreme manual optimizations that compiler backends cannot decipher.
+Thrust is a very promising tool for bare-metal and embedded systems development thanks to its innovative low-level instruction concepts. These give developers more granular control over systems programming. Unlike traditional languages that hide the underlying abstractions of C, Thrust provides a syntax and set of features that map instruction-by-instruction. This enables total manual or automatic control over the compiler.  
 
-- Thrust enables embedding of linear assembler within the compilation process, offering direct control over architecture-specific code generation.
+**Thrust is essentially C, but at an even lower level.**
+
+However, Thrust also allows high-level abstractions when needed, providing a perfect balance between low-level control and modern productivity.
+
+For example, Thrust enables embedding a linear assembler within the compilation process, offering direct control over architecture-specific code generation.
 
 ```rust
 
