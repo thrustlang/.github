@@ -162,7 +162,7 @@ fn fibonacci(n: u32) u32
 // Parameters:
 //   n: The number of Fibonacci numbers to print (unsigned 32-bit integer)
 fn printFibonacci(n: u32) void {
-    for local mut i: u32 = 0; i < n; ++i; {
+    for var i: u32 = 0; i < n; ++i; {
         print("%d\n", fibonacci(i));
     }
 }
@@ -193,17 +193,17 @@ fn print(fmt: const array[char]) s32 @public @arbitraryArgs @extern("printf") @c
 
 fn main(argc: s32, argv: ptr[array[char]]) s32 @public {
 
-    local mut u: s32 = atoi(
+    var u: s32 = atoi(
         (deref (argv[1] as ptr[ptr[char]])) as const array[char]
     ); 
 
     srand(time(nullptr)); 
   
-    local mut r: s32 = rand() % 10000; 
-    local mut a: array[s32; 10000]; 
+    var r: s32 = rand() % 10000; 
+    var a: array[s32; 10000]; 
 
-    for local mut i: s32 = 0; i < 10000; i++; {
-        for local mut j: s32 = 0; j < 100000; j++; {
+    for var i: s32 = 0; i < 10000; i++; {
+        for var j: s32 = 0; j < 100000; j++; {
             a[i] = (deref a[i]) + ((j % u));             
         }
 
