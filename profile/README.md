@@ -54,12 +54,7 @@ fn main() s32 @public {
 ## State
 
 - The Thrust compiler ``thrustc``: The Thrust compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Torio (the package manager) won’t be ready, so a temporary installer will be created until Torio development is complete or advanced enough for a beta. The documentation is on its way.
-
-## Documentation
-
-The documentation is on its way.
-New, dedicated documentation is on its way for the web; however, you can view the outdated version at: https://github.com/thrustlang/syntax
-
+  
 ## Examples
 
 ### Compiler
