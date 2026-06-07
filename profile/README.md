@@ -62,6 +62,12 @@ fn vecAdd(
 }
 ```
 
+If you would like to see more detailed real-world examples of how to use the programming language, you can check out the showcase folder on thrustc.
+
+[Thrust Programming Language - Showcase folder](https://github.com/thrustlang/thrustc/blob/master/showcase)
+
+<img src= "https://github.com/thrustlang/.github/blob/main/assets/standard-text-separator.png" alt= "standard-separator" style= "width: 1hv;"> </img>
+
 ## Current Features
 
 - Full standalone Ahead Of Time (AOT) compilation.
