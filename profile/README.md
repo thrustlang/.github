@@ -36,6 +36,32 @@ fn main() s32 @public {
 }
 ```
 
+**Exotic support**
+
+Thrust Programming Language supports unique architectures, including those for GPUs, such as Nvidia CUDA or AMD GPUs.
+
+```rust
+intrinsic("llvm.nvvm.read.ptx.sreg.tid.x")   threadIdxX() u32 @public;
+intrinsic("llvm.nvvm.read.ptx.sreg.ctaid.x") blockIdxX()  u32 @public;
+intrinsic("llvm.nvvm.read.ptx.sreg.ntid.x")  blockDimX()  u32 @public;
+intrinsic("llvm.nvvm.barrier0") syncthreads() void @public;
+
+static mut sdata: array[f32; 256, 3] @linkage("internal") @public;
+
+fn vecAdd(
+    a: ptr[f32, 1],
+    b: ptr[f32, 1],
+    c: ptr[f32, 1],
+    n: s32
+) void @cuda @public {
+    var tid: u32 = blockIdxX() * blockDimX() + threadIdxX();
+
+    if (tid as s32 < n) {
+        c[tid] = (deref a[tid]) + (deref b[tid]);
+    }
+}
+```
+
 ## Current Features
 
 - Full standalone Ahead Of Time (AOT) compilation.
