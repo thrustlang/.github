@@ -44,16 +44,13 @@ fn main() s32 @public {
 - Deeper code generation control.
 - Robust static type checking.
 - Standalone x86_64 assembler interoperability.
+- System-V ABI compliant
 
 ## Future Features
 
 - Automatically generated types for C headers (**CBindgen**) through the Clang frontend C & C++ compiler.
 - Quantum code generation, through QIR.
 - Support for quantum behavior emulation with embedded QCOR, or a bytecode runner.
-
-## State
-
-- The Thrust compiler ``thrustc``: The Thrust compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Torio (the package manager) won’t be ready, so a temporary installer will be created until Torio development is complete or advanced enough for a beta. The documentation is on its way.
   
 ## Examples
 
