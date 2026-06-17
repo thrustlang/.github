@@ -307,8 +307,6 @@ DISCLAIMER: *THIS DOES NOT MEAN THAT Thrust PROGRAMMING LANGUAGE IS OFFICIALLY A
 
 ## Background
 
-In fact, the programming language was originally intended for learning purposes in the compiler fields, for the "team" behind the project. However, this doesn't mean it will be __taken as seriously as possible__.
-
 The responsible team (practically a *solo developer*) considers it a side, not main, project. We focus on improving both ourselves and our side projects in parallel.
 
 ## Support
