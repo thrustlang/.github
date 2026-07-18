@@ -76,13 +76,11 @@ If you would like to see more detailed real-world examples of how to use the pro
 - Deeper code generation control.
 - Robust static type checking.
 - Standalone x86_64 assembler interoperability.
-- System-V ABI compliant
+- System-V ABI compliant.
 
 ## Future Features
 
 - Automatically generated types for C headers (**CBindgen**) through the Clang frontend C & C++ compiler.
-- Quantum code generation, through QIR.
-- Support for quantum behavior emulation with embedded QCOR, or a bytecode runner.
   
 ## Examples
 
