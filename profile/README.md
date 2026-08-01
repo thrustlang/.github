@@ -106,12 +106,12 @@ In the future, there will be a package manager that works exactly like Rust **Ca
 torio run
 ```
 
-### Code Example - Hello World
+### Hello World
 
 ```rust
 // ******************************************************************************************
 //
-//   Hello World!
+//                                      Hello World!
 //
 // ******************************************************************************************
 
@@ -121,7 +121,7 @@ torio run
 // - '.thrust'
 //
 
-// External declaration for the C printf function
+// External declaration for the C printf function.
 fn print(fmt: const array[char]) s32 @public @arbitraryArgs @extern("printf") @convention("C");
 
 fn main() s32 @public {
