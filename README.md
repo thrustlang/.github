@@ -6,5 +6,5 @@
 <h1 align="center">Thrust Programming Language</h1>
 
 <p align="center">
-  The <b>Thrust Programming Language</b>. A general-purpose, statically typed systems programming language for writing verbose, accurate, and fast code.  
+  <b>Thrust Programming Language</b>. A general-purpose, statically typed systems programming language for writing verbose, accurate, and fast code.  
 </p>
