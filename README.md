@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/thrustlang.png" alt= "logo" 
+  <img src= "https://github.com/thrustlang/.github/blob/main/assets/logos/new%20logo/thrustlang-logo-banner-text-italic.png" alt= "logo" 
   style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
