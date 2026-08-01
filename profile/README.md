@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrust Programming Language</h1>
 
-<p align="center">The <b>Thrust Programming Language</b>. A general-purpose, statically typed systems programming language for writing verbose, accurate, and fast code.</p>
+<p align="center">A general-purpose, statically typed systems programming language for writing verbose, accurate, and fast code.</p>
 
 <img src= "https://github.com/thrustlang/.github/blob/main/assets/standard-text-separator.png" alt= "standard-separator" style= "width: 1hv;"> </img>
 
