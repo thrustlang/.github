@@ -86,7 +86,7 @@ fn fibonacci(n: s32) s32 @public {
 
 fn main(argc: s32, argv: ptr[array[char]]) s32 @public {
     if argc < 2 {
-        print("Usage: ./fibonacci <n>\n");
+        io::print("Usage: ./fibonacci <n>\n");
         return 1;
     }
 
