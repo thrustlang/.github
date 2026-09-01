@@ -56,8 +56,9 @@ That balance is the whole point: you can go as deep as you need to, and you are 
 ### Fibonacci
 
 ```rust
-fn atoi(str: const array[char]) s32 @public @arbitraryArgs @extern("atoi") @convention("C");
-fn print(fmt: const array[char]) s32 @public @arbitraryArgs @extern("printf") @convention("C");
+import std::io;
+
+fn atoi(str: array[char]) s32 @public @arbitraryArgs @extern("atoi") @convention("C");
 
 fn fibonacci(n: s32) s32 @public {
     if n <= 0 {
@@ -89,18 +90,16 @@ fn main(argc: s32, argv: ptr[array[char]]) s32 @public {
         return 1;
     }
 
-    var n: s32 = atoi(
-        (deref (argv[1] as ptr[ptr[char]])) as const array[char]
-    );
+    var n: s32 = atoi(argv[1]);
 
     if n < 0 {
-        print("Please enter a non-negative number\n");
+        io::print("Please enter a non-negative number\n");
         return 1;
     }
 
     var result: s32 = fibonacci(n);
 
-    print("fib(%d) = %d\n", n, result);
+    io::print("fib(%d) = %d\n", n, result);
 
     return 0;
 }
@@ -137,13 +136,13 @@ The compiler is distributed as prebuilt binaries in [GitHub releases](https://gi
 #### Linux
 
 ```console
-./thrustc -opt O3 fibonacci.thrust -start -o fibonacci -end && ./fibonacci
+./thrustc -opt=O3 fibonacci.thrust -cc-args="-o fibonacci" && ./fibonacci
 ```
 
 #### Windows
 
 ```console
-.\thrustc.exe -opt O3 fibonacci.thrust -start -o fibonacci.exe -end && .\fibonacci.exe
+.\thrustc.exe -opt=O3 fibonacci.thrust -cc-args="-o fibonacci.exe" && .\fibonacci.exe
 ```
 
 ## Status
