@@ -9,10 +9,6 @@
 </p>
 
 <p align="center">
-  <em>Source files use the <code>.thrust</code> extension.</em>
-</p>
-
-<p align="center">
   <a href="https://github.com/thrustlang/thrustc">Compiler</a> |
   <a href="https://github.com/thrustlang/thrustc/releases">Downloads</a> |
   <a href="https://github.com/thrustlang/website">Website Source</a> |
@@ -27,7 +23,7 @@ Thrust gives low-level machine control like C, while still letting you reach for
 
 New features are designed to keep the same mental model: if you can reason about C, you can reason about Thrust.
 
-The language favors explicit code, predictable behavior, and readable systems programming over hidden runtime machinery.
+The language favors explicit code, predictable behavior, and readable systems programming over hidden runtime abstractions.
 
 ## Language Features
 
