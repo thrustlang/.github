@@ -21,9 +21,9 @@
 
 Thrust gives low-level machine control like C, while still letting you reach for higher-level abstractions when needed.
 
-New features are designed to keep the same mental model: if you can reason about C, you can reason about Thrust.
-
 The language favors explicit code, predictable behavior, and readable systems programming over hidden runtime abstractions.
+
+New features are designed to keep the same mental model: if you can reason about C, you can reason about Thrust.
 
 ## Language Features
 
