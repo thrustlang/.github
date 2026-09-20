@@ -19,9 +19,9 @@
 
 ## Philosophy
 
-Thrust exposes memory operations, data layout and alignment, calling conventions, and target information in the source code while providing zero-cost abstractions.
+Thrust exposes memory operations, data layout, explicit memory alignment, calling conventions, and target information in the source code while providing high-level zero-cost abstractions with simplicity.
 
-Zero cost abstractions are resolved during compilation. Generics are specialized, modules declare imported files and symbols, and compile time conditionals remove inactive code before type checking and code generation. A scope based ownership mechanism can automatically deallocate resources without runtime ownership tracking.
+Zero cost abstractions are resolved during compilation. Generics are specialized, modules declare imported files and symbols, and compile time conditionals remove inactive code before type checking and code generation. A scope based ownership mechanism can automatically deallocate memory without runtime ownership tracking.
 
 Thrust keeps memory management direct and simple. The programmer controls allocation, pointer validity, resource lifetime, and the exact point at which memory is released, as in C.
 
