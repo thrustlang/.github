@@ -101,19 +101,6 @@ fn puts(text: const array[char]) s32
 @else const PLATFORM: u32 = 3;
 ```
 
-### Data Layout
-
-```thrust
-struct Header @public {
-    magic: u32,
-    count: u16,
-    flags: u16
-}
-
-const HEADER_SIZE: usize = sizeOf(Header);
-const HEADER_ALIGN: u32 = alignOf(Header);
-```
-
 ## Getting Started
 
 Prebuilt compiler binaries are available in the [`thrustc` releases](https://github.com/thrustlang/thrustc/releases) for Linux x64, Windows x64, and macOS x64/ARM64.
