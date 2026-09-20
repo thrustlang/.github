@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/thrustlang/thrustc">Compiler</a> |
-  <a href="https://github.com/thrustlang/torio">Package manager and Compiler Controller</a> |
+  <a href="https://github.com/thrustlang/torio">Package Manager</a> |
   <a href="https://github.com/thrustlang/thrustc/releases">Downloads</a> |
   <a href="https://github.com/thrustlang/website">Website Source</a> |
   <a href="https://github.com/thrustlang/roadmap">Roadmap</a>
@@ -130,7 +130,7 @@ The language and standard library are still young. Target support varies by ABI,
 ## Useful Repositories
 
 - [**Main Compiler** (`thrustc`)](https://github.com/thrustlang/thrustc)
-- [**Package Manager and Compiler controller** (`torio`)](https://github.com/thrustlang/torio)
+- [**Package Manager** (`torio`)](https://github.com/thrustlang/torio)
 - [**Language Syntax**](https://github.com/thrustlang/syntax)
 - [**Website Source**](https://github.com/thrustlang/website)
 - [**Language Roadmap**](https://github.com/thrustlang/roadmap)
