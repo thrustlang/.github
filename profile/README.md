@@ -19,7 +19,7 @@
 
 ## Philosophy
 
-Thrust exposes memory operations, data layout, explicit memory alignment, calling conventions, and target information in the source code while providing high-level zero-cost abstractions with simplicity.
+Thrust exposes memory operations, data layout, explicit memory alignment, calling conventions, and target information in the source code while providing high-level zero cost abstractions with simplicity.
 
 Zero cost abstractions are resolved during compilation. Generics are specialized, modules declare imported files and symbols, and compile time conditionals remove inactive code before type checking and code generation. A scope based ownership mechanism can automatically deallocate memory without runtime ownership tracking.
 
@@ -122,9 +122,9 @@ For compiler flags and examples, see the [`thrustc` repository](https://github.c
 
 ## Status
 
-Thrust is evolving in early `0.2.x` releases. Its compiler has a complete frontend-to-LLVM pipeline, static type checking, AOT compilation, JIT execution, a versioned standard library, and target-configurable code generation.
+Thrust is evolving in early `0.2.x` releases. Its compiler has a complete frontend to LLVM, static type checking, AOT compilation, JIT execution, a versioned standard library, and target configurable code generation.
 
-The language and standard library are still young. Target support varies by ABI, linker, system libraries, and external SDK availability.
+The language and standard library are still young. Target support varies by ABI, linker, system libraries.
 
 ## Useful Repositories
 
