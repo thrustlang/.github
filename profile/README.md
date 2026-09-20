@@ -64,6 +64,7 @@ fn fibonacci[T](n: T) T @public {
 fn main() s32 @public {
     var result: s32 = fibonacci[s32](10);
     io::print(fmt= "fib(%d) = %d\n", 10, result);
+    
     return 0;
 }
 ```
