@@ -19,41 +19,25 @@
 
 ## Philosophy
 
-Thrust gives low-level machine control like C, while still letting you reach for higher-level abstractions when needed.
+Thrust exposes memory operations, data layout and alignment, calling conventions, and target information in the source code while providing zero-cost abstractions.
 
-The language favors explicit code, predictable behavior, and readable systems programming over hidden runtime abstractions.
+Zero cost abstractions are resolved during compilation. Generics are specialized, modules declare imported files and symbols, and compile time conditionals remove inactive code before type checking and code generation. A scope based ownership mechanism can automatically deallocate resources without runtime ownership tracking.
 
-New features are designed to keep the same mental model: if you can reason about C, you can reason about Thrust.
-
-## Language Features
-
-- **C-style clarity**: explicit locals, direct control flow, predictable value and branch behavior.
-- **Generics at compile time**: generic functions and structures with explicit instantiation and no runtime generic overhead.
-- **C interoperability**: direct interop through `@extern`, `@convention("C")`, variadic declarations, and raw pointer boundaries.
-- **Compile-time conditionals**: `@if`, `@elif`, and `@else` for platform-specific code selection.
-- **Useful imports**: `std::` modules, aliases, selective imports, and file imports without hiding dependencies.
-- **Built-in compile helpers**: `sizeOf`, `alignOf`, `typeWidth`, `pointerWidth`, `isSameType`, `staticAssert`, and compiler metadata helpers.
-- **Cross-platform targets**: build for Linux, Windows, macOS, RISC-V, WebAssembly, and other backend-supported targets.
-
-## Compiler Capabilities
-
-- Standalone Ahead-Of-Time (AOT) compilation.
-- Just-In-Time (JIT) compilation via `-jit`.
-- LLVM backend with broad target support.
-- System V ABI support and NVIDIA CUDA ABI work.
-- Sanitizers, stack protection, and DWARF debug information.
-- Diagnostics tooling and fuzzing coverage.
-- Editor support for VS Code, Sublime Text, and Neovim.
+Thrust keeps memory management direct and simple. The programmer controls allocation, pointer validity, resource lifetime, and the exact point at which memory is released, as in C.
 
 ## Experimental And Advanced Areas
 
 - **CUDA / NVPTX**: GPU kernels compiled to PTX and launched through CUDA tooling.
 - **Inline assembly**: `asmfn`, `asm`, and `global_asm` for architecture-specific code.
-- **C header integration**: `importC` work for importing C declarations.
+- **WebAssembly**: `wasm32` code generation and ABI support without an integrated WASI or browser runtime.
+- **C header integration**: `importC` is reserved for work on importing C declarations and is not yet a complete integration.
+- **Language server**: completion and limited source analysis are available, while diagnostics, definitions, and document symbols are still incomplete.
 
-These areas are useful for low-level and platform-specific work, but they are expected to evolve as the language matures.
+These areas are incomplete or depend on external platform tooling. Their interfaces and supported workflows may change as the compiler matures.
 
-## Example
+## Examples
+
+### Standard Library And Generics
 
 ```thrust
 import std::io;
@@ -79,9 +63,55 @@ fn fibonacci[T](n: T) T @public {
 
 fn main() s32 @public {
     var result: s32 = fibonacci[s32](10);
-    io::print("fib(%d) = %d\n", 10, result);
+    io::print(fmt= "fib(%d) = %d\n", 10, result);
     return 0;
 }
+```
+
+### Generic Data Structures
+
+```thrust
+struct Buffer[T] @public {
+    data: ptr[T],
+    length: usize,
+    capacity: usize
+}
+
+var buffer := new Buffer[u8] {
+    data: nullptr,
+    length: 0,
+    capacity: 64
+};
+```
+
+### C Interoperability
+
+```thrust
+fn puts(text: const array[char]) s32
+    @public
+    @extern("puts")
+    @convention("C");
+```
+
+### Compile-Time Selection
+
+```thrust
+@if(isLinux()) const PLATFORM: u32 = 2;
+@elif(isWindows()) const PLATFORM: u32 = 1;
+@else const PLATFORM: u32 = 3;
+```
+
+### Data Layout
+
+```thrust
+struct Header @public {
+    magic: u32,
+    count: u16,
+    flags: u16
+}
+
+const HEADER_SIZE: usize = sizeOf(Header);
+const HEADER_ALIGN: u32 = alignOf(Header);
 ```
 
 ## Getting Started
@@ -104,9 +134,9 @@ For compiler flags and examples, see the [`thrustc` repository](https://github.c
 
 ## Status
 
-Thrust is evolving in early `0.2.x` releases. The core pipeline is already in place: parsing, static type checking, LLVM code generation, JIT execution, cross-compilation, standard library snapshots, and release tooling.
+Thrust is evolving in early `0.2.x` releases. Its compiler has a complete frontend-to-LLVM pipeline, static type checking, AOT compilation, JIT execution, a versioned standard library, and target-configurable code generation.
 
-The language and standard library are still young. Expect rough edges, missing pieces, and breaking changes while the project stabilizes.
+The language and standard library are still young. Target support varies by ABI, linker, system libraries, and external SDK availability.
 
 ## Useful Repositories
 
