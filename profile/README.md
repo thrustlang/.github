@@ -129,10 +129,10 @@ The language and standard library are still young. Target support varies by ABI,
 ## Useful Repositories
 
 - [**Main Compiler** (`thrustc`)](https://github.com/thrustlang/thrustc)
-- [**Package Manager and Compiler controller**](https://github.com/thrustlang/torio)
-- [**Syntax**](https://github.com/thrustlang/syntax)
+- [**Package Manager and Compiler controller** (`torio`)](https://github.com/thrustlang/torio)
+- [**Language Syntax**](https://github.com/thrustlang/syntax)
 - [**Website Source**](https://github.com/thrustlang/website)
-- [**Roadmap**](https://github.com/thrustlang/roadmap)
+- [**Language Roadmap**](https://github.com/thrustlang/roadmap)
 
 ## Support
 
