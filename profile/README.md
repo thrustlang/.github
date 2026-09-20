@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/thrustlang/thrustc">Compiler</a> |
+  <a href="https://github.com/thrustlang/torio">Package manager and Compiler Controller</a> |
   <a href="https://github.com/thrustlang/thrustc/releases">Downloads</a> |
   <a href="https://github.com/thrustlang/website">Website Source</a> |
   <a href="https://github.com/thrustlang/roadmap">Roadmap</a>
