@@ -121,8 +121,6 @@ The language and standard library are still young. Target support varies by ABI,
 
 Contributors are welcome. Whether you are new to systems programming or experienced with low-level tooling, there is room to help with language design, compiler work, documentation, examples, tests, and editor support.
 
-Spanish speakers are especially welcome.
-
 ## Social Networks
 
 [![Discord](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
