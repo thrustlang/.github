@@ -103,24 +103,6 @@ fn puts(text: const array[char]) s32
 @else const PLATFORM: u32 = 3;
 ```
 
-## Getting Started
-
-Prebuilt compiler binaries are available in the [`thrustc` releases](https://github.com/thrustlang/thrustc/releases) for Linux x64, Windows x64, and macOS x64/ARM64.
-
-### Linux
-
-```console
-./thrustc fibonacci.thrust -cc-args="-o fibonacci" && ./fibonacci
-```
-
-### Windows
-
-```console
-.\thrustc.exe fibonacci.thrust -cc-args="-o fibonacci.exe" && .\fibonacci.exe
-```
-
-For compiler flags and examples, see the [`thrustc` repository](https://github.com/thrustlang/thrustc).
-
 ## Status
 
 Thrust is evolving in early `0.2.x` releases. Its compiler has a complete frontend to LLVM, static type checking, AOT compilation, JIT execution, a versioned standard library, and target configurable code generation.
