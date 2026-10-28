@@ -128,7 +128,3 @@ Contributors are welcome. Whether you are new to systems programming or experien
 [![Discord](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
 
 <img src="https://raw.githubusercontent.com/thrustlang/.github/main/assets/standard-text-separator.png" alt="separator" style="width: 100%;">
-
-# Always Remember
-
-~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
